@@ -8,7 +8,13 @@
 ]]
 
 -- INSERT YOUR CODE HERE
+function string:starts_with(prefix)
+  return prefix == self:sub(1, #prefix)
+end
 
+function string:ends_with(suffix)
+  return suffix == self:sub(#self - #suffix + 1)
+end
 
 -- END OF CODE INSERT
 
